@@ -5,6 +5,6 @@
 -- name, string (255 characters)
 -- If the table already exists, your script should not fail
 
-CREATE TABLE users (id integer NOT NULL AUTO_INCREMENT, PRIMARY KEY (id),
-                   email varchar(255) NOT NULL UNIQUE,
-                   name varchar(255));
+CREATE TABLE IF NOT EXISTS users (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (id),
+                   email VARCHAR(255) NOT NULL UNIQUE,
+                   name VARCHAR(255));
