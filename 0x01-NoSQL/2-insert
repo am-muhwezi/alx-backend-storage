@@ -1,2 +1,2 @@
-//inserts in a db
+// inserts in a db
 db.getCollection('school').insertOne({name: "Holberton school"})
