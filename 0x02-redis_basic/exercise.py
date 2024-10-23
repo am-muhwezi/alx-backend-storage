@@ -1,5 +1,7 @@
+"""This is a module that defines class cache as a first step to building our own cacheing
+system"""
 #!/usr/bin/python3
-import redis
+import redis # type: ignore
 import uuid
 
 
