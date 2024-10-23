@@ -1,0 +1,2 @@
+// adds new attr to collection school
+db.getCollection('school').updateMany({name : "Holberton school"}, {$set: {address : "372 Mason street"}})
