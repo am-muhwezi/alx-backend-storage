@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """This is a module that defines class cache as a first
 step to building our own cacheing system"""
-
-import redis  # type: ignore
 import uuid
+import redis  # type: ignore
 
 
 class Cache:
@@ -14,7 +13,7 @@ class Cache:
         self._redis.flushdb()
 
     def store(self, data: str | int | float | bytes) -> str:
-        randomKey = str(uuid.uuid4())
-        # store input in _redis ande return key
-        self._redis.set(randomKey, data)
-        return randomKey
+        """method generates a random key and strores the data into redis"""
+        random_key = str(uuid.uuid4())
+        self._redis.set(random_key, data)
+        return random_key
