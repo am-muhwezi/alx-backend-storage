@@ -1,2 +1,2 @@
-// use_or_create database
+// Create a database
 use my_db
