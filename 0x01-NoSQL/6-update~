@@ -1,2 +1,0 @@
-
-db.school.updateMany({name : "Holberton school"}, {$set: {address : "372 Mason street"}})
